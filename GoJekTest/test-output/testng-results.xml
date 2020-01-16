@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results total="2" passed="0" failed="0" skipped="2">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-01-16T04:31:30Z" name="Default suite" finished-at="2020-01-16T04:31:30Z" duration-ms="22">
+    <groups>
+    </groups>
+    <test started-at="2020-01-16T04:31:30Z" name="Default test" finished-at="2020-01-16T04:31:30Z" duration-ms="22">
+      <class name="com.midtrans.test.ScenarioMidTrans">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.midtrans.test.ScenarioMidTrans@53ca01a2]" started-at="2020-01-16T10:01:30Z" name="launchBrowser" finished-at="2020-01-16T10:01:30Z" duration-ms="0" status="FAIL">
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[/Users/arumugasamys/Downloads/Selenium_Gojek/Selenium_Gojek\testdata\properties\testProp.property (No such file or directory)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: /Users/arumugasamys/Downloads/Selenium_Gojek/Selenium_Gojek\testdata\properties\testProp.property (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:155)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:110)
+	at com.midtrans.utils.Readprop.fetchproperty(Readprop.java:14)
+	at com.midtrans.Initialize.Setup.launchBrowser(Setup.java:30)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:510)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:211)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:298)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="buyWithValidCard()[pri:0, instance:com.midtrans.test.ScenarioMidTrans@53ca01a2]" started-at="2020-01-16T10:01:30Z" name="buyWithValidCard" finished-at="2020-01-16T10:01:30Z" duration-ms="1" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- buyWithValidCard -->
+        <test-method signature="buyWithInValidCard()[pri:0, instance:com.midtrans.test.ScenarioMidTrans@53ca01a2]" started-at="2020-01-16T10:01:30Z" name="buyWithInValidCard" finished-at="2020-01-16T10:01:30Z" depends-on-methods="com.midtrans.test.ScenarioMidTrans.buyWithValidCard" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method ScenarioMidTrans.buyWithInValidCard()[pri:0, instance:com.midtrans.test.ScenarioMidTrans@53ca01a2] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method ScenarioMidTrans.buyWithInValidCard()[pri:0, instance:com.midtrans.test.ScenarioMidTrans@53ca01a2] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1033)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- buyWithInValidCard -->
+        <test-method is-config="true" signature="postExecution()[pri:0, instance:com.midtrans.test.ScenarioMidTrans@53ca01a2]" started-at="2020-01-16T10:01:30Z" name="postExecution" finished-at="2020-01-16T10:01:30Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postExecution -->
+      </class> <!-- com.midtrans.test.ScenarioMidTrans -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" >
+
+	<listeners>
+		<listener class-name="com.midtrans.resources.ExtentReporterNG" />
+	</listeners>
+
+<test name="GOJEK TEST">
+	<classes>
+		<class name="com.midtrans.tests.ScenarioMidTrans" />
+	</classes>
+</test>
+
+
+</suite> 

@@ -1,0 +1,17 @@
+
+
+
+url=https://demo.midtrans.com/
+
+browser=chrome
+#browser=Firefox
+
+#Valid Credit Card details
+ 
+vCardNumber=4811111111111114
+expiryDate=02/20
+cVV=123
+password=112233
+
+#Invalid card details 
+iCardNumber=4911111111111113
